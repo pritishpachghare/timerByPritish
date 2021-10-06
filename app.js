@@ -52,7 +52,7 @@ function stopWatch() {
 function startStop() {
     if (status === "stopped") {
         interval = window.setInterval(stopWatch, 100);
-        document.getElementById('start').innerHTML = "Pause";
+        document.getElementById('start').innerHTML = "PAUSE";
         status = "started";
     }
     else {
