@@ -20,9 +20,7 @@ function stopWatch() {
         if (minuts / 60 === 1) {
             minuts = 0;
             hours++;
-            // if (hr / 60 == 1) {
-            //     hr = 0;
-            // }
+
         }
     }
     if (second < 10) {
@@ -51,7 +49,7 @@ function stopWatch() {
 
 function startStop() {
     if (status === "stopped") {
-        interval = window.setInterval(stopWatch, 100);
+        interval = window.setInterval(stopWatch, 1000);
         document.getElementById('start').innerHTML = "PAUSE";
         status = "started";
     }
