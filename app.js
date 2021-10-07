@@ -61,9 +61,15 @@ function startStop() {
 }
 
 
+// function reset() {
+//     second = 0;
+//     minuts = 0;
+//     hours = 0;
+//     document.getElementById('hr').innerHTML = "00 : 00 : 00"
+// }
+
+
+
 function reset() {
-    second = 0;
-    minuts = 0;
-    hours = 0;
-    document.getElementById('hr').innerHTML = "00 : 00 : 00"
+    location.reload();
 }
